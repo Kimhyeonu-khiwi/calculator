@@ -62,6 +62,7 @@ void stack_overflow(void)
 
 void stack_underflow(void)
 {
+	printf("Hello, My name is KimHyeonU!\n");
 	printf("Not enough operands in expression\n");
 	exit(EXIT_FAILURE);
 }
@@ -73,4 +74,3 @@ static void reallocate(Stack * stack)
 	free(stack->contents);
 	stack->contents = tmp;
 }
-
